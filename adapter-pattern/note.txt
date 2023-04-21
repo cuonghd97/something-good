@@ -1,0 +1,7 @@
+Mục đích:
+Adapter là design pattern thuộc nhóm Structural Pattern cho phép các đối tượng không tương thích làm việc với nhau.
+Vấn đề:
+Bạn có một phần mềm tải dữ liệu dạng XML từ nhiều nguồn và hiển thị dữ liệu đó dưới dạng biểu đồ.
+Bạn muốn cải tiến phần mềm hiện tại bằng cách tích hợp một thư viện phân tích dữ liệu từ bên thứ 3, nhưng gặp phải vấn đề đó là thư viện đó chỉ chấp nhận dữ liệu đầu vào dạng JSON.
+Bạn tính tới một phương án đó là dữ liệu sau khi được tải từ các nguồn bên ngoài sẽ được chuyển thành dạng JSON, nhưng kéo theo tất cả các biểu đồ sẽ phải thay đổi thành nhận dữ liệu đầu vào dạng JSON. Điều đó gây tốn thêm công sức và chi phí.
+Giải quyết:

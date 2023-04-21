@@ -1,0 +1,18 @@
+Ý tưởng:
+Factory Method là một design pattern thuộc nhóm khởi tạo, Factory Method cung cấp interface cho việc khởi tạo đối tượng từ class Cha, nhưng cho phép các class Con được xác định kiểu class.
+Vấn đề:
+Giả sử bạn đang thiết kế phần mềm quản lý logistic. Phiên bản đầu tiên chỉ hỗ trợ vẫn chuyển bằng xe tải.
+Do đó, mọi nghiệp vụ nhận hàng, vận chuyển, ... đểu được triển khai trong class Truck.
+Sau một thời gian phần mềm của bạn trở nên phổ biến, và bạn nhận thêm được các yêu cầu vận chuyển sang các nơi được ngăn cách bởi các đại dương.
+Bạn đã đưa ra các hướng giải quyết là mua thêm các thuyền để chở hàng. Nhưng còn phần tích hợp phương thức vận chuyển vào phần mềm?
+Bạn thêm class mới là Ship cũng có các nghiệp vụ như nhận hàng, vận chuyển, ...
+
+Khi đó có thể bạn phải làm vài công việc sau:
++ Thêm trường để xác định phương tiện xẻ tải hoặc thuyền.
++ Xem các phương thức của Truck và Ship có phương thức nào giống nhau sẽ chuyển nó ra 1 class khác ta tạm gọi là Transportation để sử dụng lại.
++ Một số phương thức ta thấy có vài đoạn code có thể dùng lại được, do cảm thấy không đáng để chuyển đoạn đó ra class khác hoặc do lười đặt tên hàm. Ta thêm một câu lệnh rẽ nhánh để xử lý cho nhanh.
+Mọi thứ có vẻ ổn cho đến khi bạn nhận thêm các yêu cầu vận chuyển bằng máy bay hay tàu hỏa.
+Khi đó logic xử lý trong code sẽ trở nên rất hỗn loạn.
+Hướng giải quyết:
+
+Thiết kế:
