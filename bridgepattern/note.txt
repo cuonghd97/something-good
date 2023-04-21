@@ -1,0 +1,2 @@
+adapter sử dụng 2 giao diện không tương thích để hoạt động với nhău
+bridge được sử dụng khi ta muốn tách rời phần trừu tượng, để triển khai chúng có thể thay đổi độc lập
