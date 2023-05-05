@@ -1,0 +1,6 @@
+Phục vụ để khởi tạo một đối tượng khi hàm khởi tạo của một class có quá nhiều trường.
+
+Hướng giải quyết:
+    - Ta có thể triển khai nhiều phương thức khởi tạo để đáp ứng được các trường hợp khởi tạo, các này trông có vẻ không hay :))
+
+
